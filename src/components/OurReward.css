@@ -1,0 +1,156 @@
+.ourReward {
+    background-color: #0F0F0F;
+    
+  }
+  
+  .reward-cards {
+    display: flex;
+    gap: 42px;
+    padding: 40px 120px;
+  }
+  
+  .reward-card0, .reward-card1, .reward-card2 {
+    width: 33%;
+    border-radius: 24px;
+    border: 2px solid rgba(255, 50, 50, 0.86);
+    background: linear-gradient(87deg, rgba(255, 50, 50, 0.10) -4.98%, rgba(255, 167, 35, 0.11) 91.73%);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .reward-card0 img {
+    width: 150px;
+  }
+  .reward-card1 img{
+    width: 150px;
+  }
+  .reward-card2 img{
+    width: 250px;
+  }
+  .reward-card h4, .reward-card h5, .reward-card p {
+    color: #FFF;
+    text-align: center;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1px;
+  }
+  
+  .reward-card0 h4, .reward-card1 h4, .reward-card2 h4 {
+    font-size: 34px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    margin-top: 6px;
+  }
+  
+  .reward-card0 h5, .reward-card1 h5, .reward-card2 h5 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  
+  .reward-card0 p, .reward-card1 p, .reward-card2 p {
+    font-family: Rubik;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 16px;
+  }
+  
+  .reward-card0 span, .reward-card1 span, .reward-card2 span {
+    display: flex;
+    width: 189px;
+    padding: 10px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 22px;
+    background: #525252;
+    color: #D8D8D8;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  
+  .reward-card0 span:hover, .reward-card1 span:hover, .reward-card2 span:hover {
+    border: none;
+  }
+ .reward-table{
+    background-color: #262626;
+    padding: 40px 120px;
+ } 
+ .reward-table h2{
+    color: #FFF;
+    font-family: Lora;
+    text-align: center;
+font-size: 40px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 3px;
+text-transform: uppercase;
+ }
+ .reward-table h2 span{
+    background: linear-gradient(86deg, rgba(255, 50, 50, 0.86) -4.79%, rgba(255, 167, 35, 0.88) 28.82%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+ }
+ .table-container{
+    background-color: #333;
+    color: #fff;
+    border-radius: 22.68px;
+    border: 1.5px solid rgba(255, 50, 50, 0.86);
+    padding: 16px 24px;
+
+ }
+
+ .table{
+    --bs-table-striped-bg: #333 !important;
+    --bs-table-color:#B2B2B2;
+
+background: #333;
+
+ }
+ .table>:not(caption)>*>* {
+    background-color: #333 !important;
+    color: #B2B2B2 !important;
+    border-bottom-width: 0px !important;
+ }
+ .table td, .table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid rgba(117, 117, 117, 0.50)    !important;
+}
+.table thead th {
+    border: none !important;
+}
+/* .table th{
+    border-top: none !important;
+} */
+.level-btn{
+    display: flex;
+    justify-content: end;
+    margin-top: 30px;
+    margin-bottom: 16px;
+}
+.level-btn button{
+    border-radius: 22.68px;
+background: #525252;
+display: flex;
+width: 189px;
+padding: 11.34px 31.185px;
+justify-content: center;
+align-items: center;
+gap: 9.45px;
+border: none;
+}
+.level-btn button:hover{
+background-color: #525252;
+}
+table tr td:nth-child(4) span{
+    border-radius: 100px;
+    background: #525252;
+    color: white;
+    padding: 6px; 
+}
