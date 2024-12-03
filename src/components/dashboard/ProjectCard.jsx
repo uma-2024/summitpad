@@ -16,7 +16,7 @@ const ProjectCard = ({ img }) => {
           </div>
         </div> */}
         <img className="w-full max-h-40 p-5" src={img} />
-        <div className="p-4">
+        <div className="p-4 d-flex flex-col align-items-center">
           <div className="text-left">
             <h3 className="text-white text-lg mb-2">Coming Soon</h3>
             <div className="flex gap-2 mb-5">

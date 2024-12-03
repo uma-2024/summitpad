@@ -8,7 +8,7 @@ import bnbLogo from "../../assets/bnb-logo.svg";
 const IDO = () => {
   return (
     <div className="text-white p-12 mt-52">
-      <div className="container mx-auto">
+      <div className="container mx-auto flex-col">
         <div className="text-center mb-12">
           <h1
             style={{ fontFamily: "fontbold" }}
@@ -27,10 +27,10 @@ const IDO = () => {
           </p>
         </div>
 
-        <div className="hidden md:block ">
+        <div className="hidden md:block"   style={{  width: "88%" }}>
           <div
-            // style={{ position: "", width: "81%" }}
-            className="grid grid-cols-1 md:grid-cols-3 gap-8"
+          
+            className="grid grid-cols-1 md:grid-cols-3 gap-8  "
           >
             <ProjectCard img={btcLogo} />
             <ProjectCard img={ethLogo} />
