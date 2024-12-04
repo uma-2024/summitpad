@@ -1,6 +1,6 @@
 import React from "react";
 import Dollar from "/dashboard/elements.png";
-import mmit from "../../assets/mmitcoin.webp";
+import mmit from "../../assets/Images/summit12logo.png";
 const Figure = () => {
   return (
     <div className="mt-20">
