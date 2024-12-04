@@ -88,7 +88,8 @@
     cursor: pointer;
     color: #fff;
     font-size: 25px;
-    margin-top: 7px;
+    /* margin-top: 7px; */
+   
 }
 
 .mobile-menu {
@@ -129,7 +130,9 @@
     }
 
     .hamburger-icon {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .mobile-menu {

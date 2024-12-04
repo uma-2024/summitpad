@@ -112,7 +112,7 @@ const Navbar = () => {
           <a href="#" onClick={toggleMobileMenu} className="text-[#98A7B5] hover:text-white text-center px-0 py-3 rounded-md w-[100px]">Buy MMIT</a>
           <a href="#" onClick={toggleMobileMenu} className="text-[#98A7B5] hover:text-white text-center px-0 py-3 rounded-md w-[100px]">Social Media</a>
           <a href="#" onClick={toggleMobileMenu} className="text-[#98A7B5] hover:text-white text-center px-0 py-3 rounded-md w-[100px]">Apply Now</a>
-          <Link to="/staking" onClick={toggleMobileMenu} className="text-[#98A7B5] hover:text-white text-center px-0 py-3 rounded-md w-[100px]">Staking</Link>
+          <Link to="/stacking" onClick={toggleMobileMenu} className="text-[#98A7B5] hover:text-white text-center px-0 py-3 rounded-md w-[100px]">Staking</Link>
         </div>
       )}
     </nav>
