@@ -30,8 +30,7 @@ const Hero = () => {
           LAUNCHPAD
         </h1>
         <p className="d-hero-para text-center md:text-left">
-          Introducing the SUMMIT Launchpad, where promises meet
-          performance, and investments turn into triumphs.
+        Step into Summit Launchpad—where vision ignites, promises deliver, and investments transform into extraordinary success. Join us on a journey where every idea becomes a triumph and every step inspires growth!
         </p>
         <p className="text-center md:text-left mb-4">
           {address ? "Your Total Staked Amount is  " + "    " + stakedAmount + "  MMIT  " : ''}
@@ -66,6 +65,7 @@ const Hero = () => {
 </div>
 
       </div>
+      <div className="header-gradient-div"></div>
     </div>
   );
 };

@@ -93,7 +93,27 @@ button {
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
-
+/* .hidden .mr-3 button{
+  border-radius: 100px !important;
+} */
+.header-gradient-div{
+  border-radius: 668px;
+  background: linear-gradient(221deg, rgba(255, 28, 238, 0.35) 11.49%, rgba(81, 106, 255, 0.35) 71.86%);
+  filter: blur(132px);
+  width: 668px;
+  height: 649px;
+  flex-shrink: 0;
+  position: absolute;
+  top: -307px;
+  right: 0px;
+  z-index: 0;
+}
+.summit-navbar{
+  position: fixed;
+  width: 100%;
+  background: #303030;
+  z-index: 1;
+}
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -184,7 +204,13 @@ button {
   transform: rotate(-5.56deg); */
   position: absolute;
 }
-
+.bg-card {
+  opacity: 1;
+  background: linear-gradient(87deg, rgba(255, 28, 238, 0.26) -4.79%, rgba(81, 106, 255, 0.28) 91.73%);
+}
+.explore-button{
+  background: linear-gradient(90deg, #ff1cee, #516aff);
+}
 /* //////////////////////////////////////////////////// */
 /* //////////////////////////////////////////////////// */
 .radio-inputs {
@@ -234,14 +260,15 @@ button {
 .d-heading {
   color: #FFF;
   font-family: fontbold;
-  font-size: 50px;
+  font-size: 42px;
   font-style: normal;
   font-weight: 700;
   line-height: 72px;
   /* 105.556% */
   letter-spacing: -2.56px;
-  margin-bottom: 24px;
+  margin-bottom:0px;
   text-align: left;
+  margin-top: 86px;
 }
 
 
@@ -271,9 +298,7 @@ button {
   margin-bottom: 32px;
   /* 162.5% */
 }
-button {
-  border-radius: 100px !important
-}
+
 @media screen and (max-width: 960px) {
 
   .d-heading,
@@ -907,7 +932,7 @@ color: white;
   align-self: end;
 }
 .summit-header{
-  width: 58%;
+  width: 51%;
   margin: 0px auto;
 }
 .blog-card-bg {

@@ -3,7 +3,7 @@ import React from "react";
 const ProjectCard = ({ img }) => {
   return (
     <div>
-      <div className="bg-[#1d1515]  rounded-lg shadow-lg d-flex flex-col">
+      <div className="bg-card  rounded-lg shadow-lg d-flex flex-col">
         {/* <div
           style={{
             background:
@@ -135,7 +135,7 @@ const ProjectCard = ({ img }) => {
               <span className="text-xs">Total Raised</span>
             </div>
           </div> */}
-          <button className="bg-[gray]  text-white py-2 px-10 w-full  transition duration-300">
+          <button className="bg-[gray]  text-white py-2 px-10 w-full  transition duration-300 explore-button">
             Explore Project
           </button>
         </div>

@@ -61,7 +61,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-[#24262B] shadow-2xl">
+    <nav className="bg-[#24262B] shadow-2xl summit-navbar">
       <div className="flex justify-center items-center md:justify-between px-10 py-2">
         <div onClick={handleClick} style={{cursor:'pointer'}}>
           {/* <span className="d-heading-gardiant text-4xl">MM Pad</span> */}
