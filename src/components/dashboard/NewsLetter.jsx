@@ -9,7 +9,7 @@ const NewsLetter = () => {
             <div>
                 <div className="news-letter-inp-box">
                     <div className="news-letter-inp-wrapper">
-                        <input className="news-letter-inp" type="text" placeholder="Subscribe" />
+                        <input className="news-letter-inp outline-none text-white" type="text" placeholder="Subscribe" />
                     </div>
                     <button className="d-hero-g-btn">Get Started</button>
                 </div>

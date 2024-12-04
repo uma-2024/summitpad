@@ -22,7 +22,7 @@ const Hero = () => {
 
   
   return (
-    <div className=" mb-4 ">
+    <div className=" mb-4 overflow-hidden">
       <div className="md:order-1 order-2 summit-header">
         <h1 className="d-heading text-center md:text-left mt-10">
           {" "}

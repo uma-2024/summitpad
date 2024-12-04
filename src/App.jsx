@@ -33,6 +33,10 @@ createWeb3Modal({ wagmiConfig, projectId, chains });
 
 import "./App.css";
 import OurReward from "./components/OurReward";
+import Footer from "./components/Footer";
+import Stack from "./components/Stack";
+import Stacking from "./components/Stacking";
+import Steps from "./components/Steps";
 
 function App() {
   return (
@@ -48,12 +52,14 @@ function App() {
                 <div className="md:px-20 md:py-10 p-2 bg-[#0f0f0f]">
                   <HeroD />
                   <Figure />
+                  <Steps/>
                 </div>
                 <MarqueeS />
                 <div className="md:px-20 md:py-10 p-2 bg-[#0f0f0f]">
                   <IDO />
-                  <News />
+                  {/* <News /> */}
                   <NewsLetter />
+                  <Footer/>
                 </div>
               </>
             </WagmiConfig>

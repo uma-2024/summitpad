@@ -3,7 +3,7 @@ import ProjectCard from "./ProjectCard";
 // import commingsoon from "../../assets/commingsoon.png";
 import btcLogo from "../../assets/btc-logo.svg";
 import ethLogo from "../../assets/eth-logo.svg";
-import bnbLogo from "../../assets/bnb-logo.svg";
+import bnbLogo from "../../assets/Solana-Logo.png";
 
 const IDO = () => {
   return (
@@ -17,7 +17,7 @@ const IDO = () => {
             Upcoming IDOs
           </h1>
           <p className="mb-4">
-            <span>Why MMPAD?</span> MMPAD is The Pinnacle of Joint-Community IDO
+            <span>Why SUMMITPAD?</span> SUMMITPAD is The Pinnacle of Joint-Community IDO
             Platforms. Unlike traditional launchpads, we're not just a platform
             but a community-driven force. We're pioneering a revolution in
             Initial DEX Offerings, setting the gold standard with unparalleled

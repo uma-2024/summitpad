@@ -3,7 +3,7 @@ import React from "react";
 const ProjectCard = ({ img }) => {
   return (
     <div>
-      <div className="bg-[#1d1515]  rounded-lg shadow-lg">
+      <div className="bg-[#1d1515]  rounded-lg shadow-lg d-flex flex-col">
         {/* <div
           style={{
             background:
@@ -15,7 +15,7 @@ const ProjectCard = ({ img }) => {
             <span className="text-3xl text-white">?</span>
           </div>
         </div> */}
-        <img className="w-full max-h-40 p-5" src={img} />
+        <img className=" max-h-40 p-5" src={img} style={{width:"65%", margin:"0 auto"}} />
         <div className="p-4 d-flex flex-col align-items-center">
           <div className="text-left">
             <h3 className="text-white text-lg mb-2">Coming Soon</h3>

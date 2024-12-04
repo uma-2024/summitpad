@@ -1,6 +1,13 @@
 import React from 'react'
 import './Footer.css'
+import { Link } from 'react-router-dom'
+import { FaTelegramPlane } from "react-icons/fa";
+import { FaMediumM } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+
 const Footer = () => {
+  
+
   return (
     <div className='footer'>
     <div className='footer-container'>
@@ -11,48 +18,23 @@ const Footer = () => {
         <input placeholder='Enter your email Address'></input>
         <button>Subscribe</button>
         </div>
+        
         <div className='footer-all-icon'>
-            <div><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
-<circle cx="25" cy="25" r="25" fill="white"/>
-<path d="M34.8485 8.33337H29.8898C27.698 8.33337 25.5959 9.21135 24.046 10.7742C22.4961 12.337 21.6254 14.4566 21.6254 16.6667V21.6667H16.6667V28.3334H21.6254V41.6667H28.2369V28.3334H33.1956L34.8485 21.6667H28.2369V16.6667C28.2369 16.2247 28.4111 15.8008 28.7211 15.4882C29.031 15.1756 29.4515 15 29.8898 15H34.8485V8.33337Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
-</svg></div>
-<div><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
-<g clip-path="url(#clip0_146_270)">
-<circle cx="25" cy="25" r="25" fill="white"/>
-<path d="M14.5833 13.5417C14.5833 12.1604 15.132 10.8356 16.1088 9.85886C17.0856 8.88211 18.4103 8.33337 19.7916 8.33337H25V18.75H19.7916C18.4103 18.75 17.0856 18.2013 16.1088 17.2246C15.132 16.2478 14.5833 14.923 14.5833 13.5417Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M25 8.33337H30.2083C30.8923 8.33337 31.5696 8.46809 32.2015 8.72983C32.8334 8.99158 33.4075 9.37522 33.8912 9.85886C34.3748 10.3425 34.7585 10.9167 35.0202 11.5486C35.2819 12.1805 35.4167 12.8577 35.4167 13.5417C35.4167 14.2257 35.2819 14.9029 35.0202 15.5349C34.7585 16.1668 34.3748 16.7409 33.8912 17.2246C33.4075 17.7082 32.8334 18.0918 32.2015 18.3536C31.5696 18.6153 30.8923 18.75 30.2083 18.75H25V8.33337Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M25 23.9583C25 23.2744 25.1347 22.5971 25.3965 21.9652C25.6582 21.3333 26.0418 20.7591 26.5255 20.2755C27.0091 19.7918 27.5833 19.4082 28.2152 19.1465C28.8471 18.8847 29.5244 18.75 30.2083 18.75C30.8923 18.75 31.5696 18.8847 32.2015 19.1465C32.8334 19.4082 33.4075 19.7918 33.8912 20.2755C34.3748 20.7591 34.7585 21.3333 35.0202 21.9652C35.2819 22.5971 35.4167 23.2744 35.4167 23.9583C35.4167 24.6423 35.2819 25.3196 35.0202 25.9515C34.7585 26.5834 34.3748 27.1575 33.8912 27.6412C33.4075 28.1248 32.8334 28.5085 32.2015 28.7702C31.5696 29.0319 30.8923 29.1667 30.2083 29.1667C29.5244 29.1667 28.8471 29.0319 28.2152 28.7702C27.5833 28.5085 27.0091 28.1248 26.5255 27.6412C26.0418 27.1575 25.6582 26.5834 25.3965 25.9515C25.1347 25.3196 25 24.6423 25 23.9583V23.9583Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M14.5833 34.375C14.5833 32.9936 15.132 31.6689 16.1088 30.6921C17.0856 29.7154 18.4103 29.1666 19.7916 29.1666H25V34.375C25 35.7563 24.4512 37.0811 23.4745 38.0578C22.4977 39.0346 21.173 39.5833 19.7916 39.5833C18.4103 39.5833 17.0856 39.0346 16.1088 38.0578C15.132 37.0811 14.5833 35.7563 14.5833 34.375Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M14.5833 23.9583C14.5833 22.577 15.132 21.2522 16.1088 20.2755C17.0856 19.2987 18.4103 18.75 19.7916 18.75H25V29.1667H19.7916C18.4103 29.1667 17.0856 28.6179 16.1088 27.6412C15.132 26.6644 14.5833 25.3397 14.5833 23.9583Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
-</g>
-<defs>
-<clipPath id="clip0_146_270">
-<rect width="50" height="50" fill="white"/>
-</clipPath>
-</defs>
-</svg></div>
-<div><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
-<circle cx="25" cy="25" r="25" fill="white"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M17.2239 9.875C13.1652 9.875 9.875 13.1652 9.875 17.2239V32.9217C9.875 36.9804 13.1652 40.2707 17.2239 40.2707H32.9217C36.9804 40.2707 40.2707 36.9804 40.2707 32.9217V17.2239C40.2707 13.1652 36.9804 9.875 32.9217 9.875H17.2239ZM8.875 17.2239C8.875 12.6129 12.6129 8.875 17.2239 8.875H32.9217C37.5327 8.875 41.2707 12.6129 41.2707 17.2239V32.9217C41.2707 37.5327 37.5327 41.2707 32.9217 41.2707H17.2239C12.6129 41.2707 8.875 37.5327 8.875 32.9217V17.2239ZM25.9887 19.288C24.7863 19.1097 23.5582 19.3151 22.4793 19.8749C21.4003 20.4348 20.5254 21.3206 19.9789 22.4064C19.4324 23.4922 19.2421 24.7226 19.4352 25.9227C19.6284 27.1229 20.195 28.2315 21.0545 29.0911C21.9141 29.9506 23.0227 30.5172 24.2229 30.7104C25.423 30.9035 26.6534 30.7132 27.7392 30.1667C28.825 29.6202 29.7108 28.7453 30.2707 27.6663C30.8305 26.5874 31.0359 25.3593 30.8576 24.1569C30.6757 22.9304 30.1042 21.7949 29.2274 20.9182C28.3507 20.0414 27.2152 19.4699 25.9887 19.288ZM22.0187 18.9873C23.2844 18.3306 24.7249 18.0897 26.1354 18.2988C27.5741 18.5122 28.9061 19.1826 29.9346 20.211C30.963 21.2395 31.6334 22.5715 31.8468 24.0102C32.0559 25.4207 31.815 26.8612 31.1583 28.1269C30.5016 29.3925 29.4625 30.4189 28.1888 31.06C26.9151 31.701 25.4718 31.9242 24.064 31.6977C22.6562 31.4711 21.3557 30.8064 20.3474 29.7982C19.3391 28.7899 18.6745 27.4894 18.4479 26.0816C18.2214 24.6738 18.4446 23.2305 19.0856 21.9568C19.7267 20.6831 20.7531 19.644 22.0187 18.9873ZM33.7066 15.939C33.4305 15.939 33.2066 16.1629 33.2066 16.439C33.2066 16.7152 33.4305 16.939 33.7066 16.939H33.7246C34.0008 16.939 34.2246 16.7152 34.2246 16.439C34.2246 16.1629 34.0008 15.939 33.7246 15.939H33.7066Z" fill="black"/>
-</svg></div>
-<div><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
-<g clip-path="url(#clip0_146_272)">
-<circle cx="25" cy="25" r="25" fill="white"/>
-<path d="M39.5833 10.4166L20.8333 29.1666" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M39.5833 10.4166L27.9167 43.75L21.25 28.75L6.25 22.0833L39.5833 10.4166Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
-</g>
-<defs>
-<clipPath id="clip0_146_272">
-<rect width="50" height="50" fill="white"/>
-</clipPath>
-</defs>
-</svg></div>
+            <div className='footer-icon' >
+              <Link to='https://medium.com/@official_summit.io'><FaTelegramPlane /></Link>
+            </div>
+            <div className='footer-icon'>
+              <Link to='https://medium.com/@official_summit.io'> <FaMediumM /></Link>
+            </div>
+            <div className='footer-icon'>
+              <Link to='https://x.com/summitofficial2'><FaTwitter/></Link>
+            </div>
         </div>
 
       </div>
       <div className='footer-card2'>
-        <h4>MMPAD Launchpad</h4>
-        <p>MMPAD, a pioneering protocol, offers MMIT token holders the opportunity to actively participate in the ecosystem</p>
+        <h4>SUMMIT Launchpad</h4>
+        <p>SUMMIT, a pioneering protocol, offers MMIT token holders the opportunity to actively participate in the ecosystem</p>
         <div className='footer-card-01'>
             {/* <div className='footer-card-02'>
                 <h5>Product</h5>

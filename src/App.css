@@ -271,7 +271,9 @@ button {
   margin-bottom: 32px;
   /* 162.5% */
 }
-
+button {
+  border-radius: 100px !important
+}
 @media screen and (max-width: 960px) {
 
   .d-heading,
@@ -300,6 +302,7 @@ button {
 
 .d-hero-btn-flex {
   display: flex;
+  flex-direction: row-reverse;
   gap: 12px;
 }
 
@@ -313,7 +316,7 @@ button {
   /* 150% */
   letter-spacing: -0.64px;
   padding: 12px 24px;
-  border-radius: 4px;
+  border-radius: 54px;
   /* background: var(--G, linear-gradient(93deg, #FF3232 41.16%, #FFA723 97.59%)); */
   background: linear-gradient(90deg, #ff1cee, #516aff);
 }
@@ -894,12 +897,12 @@ button {
 }
 .apply-btn{
 border: 1px solid #516aff;
-border-radius: 4px;
+border-radius: 54px;
 background-color: transparent;
 color: white;
 }
 .cloud-Image{
-  width: 45%;
+  width: 43%;
   display: flex;
   align-self: end;
 }

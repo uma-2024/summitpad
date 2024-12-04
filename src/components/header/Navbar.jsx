@@ -86,16 +86,16 @@ const Navbar = () => {
           >
             Apply Now
           </a>
-          <Link
+          {/* <Link
             to="/staking"
             className="text-[#98A7B5] hover:text-white text-center px-0 py-3 rounded-md w-[100px]"
           >
             Staking
-          </Link>
+          </Link> */}
         </div>
         <div className="hidden md:flex items-center">
-          <div className="mr-3">
-            <Web3Button />
+          <div className="mr-3 " >
+            <Web3Button style={{borderRadius:"50%"}} />
           </div>
         </div>
         <div className="md:hidden flex gap-2 ml-auto">

@@ -191,7 +191,7 @@ color: #D8D8D8;
     border: none;
 }
 .detail-card div:hover{
-    box-shadow: -9px 7px 5px 0px rgba(255, 167, 35, 0.24), 1px 1px 21px 0px rgba(255, 167, 35, 0.88) inset;
+    box-shadow: -9px 7px 5px 0px rgba(255, 28, 238, 0.24), 1px 1px 21px 0px rgba(81, 106, 255, 0.88) inset;
 }
 .dropdown-menu.show {
     background-color: rgba(81, 106, 255, 0.88);

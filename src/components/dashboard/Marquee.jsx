@@ -20,7 +20,7 @@ import svg17 from "../../assets/marquee/17.svg";
 
 const MarqueeS = () => {
   return (
-    <div className="bg-[#0F0F0F] marquee-flex relative">
+    <div className="bg-[#0F0F0F] marquee-flex relative overflow-hidden">
       {/* translate-y-[35%] translate-x-[50%] */}
       <div className="marquee-left absolute z-[10] w-full top-1/2 banner-img mt-5">
         <div className="relative p-5 md:p-0">

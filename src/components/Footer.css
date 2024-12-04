@@ -10,6 +10,7 @@
     height: 400px;
     color: white;
     display: flex;
+    gap: 100px;
 }
 
 .footer-container h4{
@@ -25,14 +26,27 @@
     text-transform: uppercase;
     text-align: left;
     margin-top: 0px;
-    margin-bottom: 24px;
+    margin-bottom: 0px;
 }
 .footer-card1 input{
     width: 295px;
 height: 50px;
-padding: 0px;
-color: #B1B5BB;
+padding: 0px 10px;
+color: #303030;
+outline: none;
 }
+.footer-icon{
+    background: linear-gradient(87deg, rgba(255, 28, 238, 0.86) -4.79%, rgba(81, 106, 255, 0.88) 91.73%);
+    padding: 10px 10px;
+    border-radius: 50px;
+}
+.footer-icon a svg{
+    color: white;
+    width: 20px;
+    height: 20px;
+}
+
+
 .footer-card1 .input-button{
     display: flex;
 width: 436px;
@@ -53,12 +67,19 @@ flex-shrink: 0;
     border: none;
 }
 .footer-card1{
-    width:30%;
-    margin-right: 84px;
+    width:40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* margin-right: 84px; */
 }
 .footer-card2{
 width: 30%;
-margin-right: 62px;
+/* margin-right: 62px; */
+display: flex;
+flex-direction: column;
+gap: 20px;
+
 }
 
 
@@ -71,7 +92,7 @@ margin-right: 62px;
 .footer-card-02{
     display: flex;
     flex-direction: column;
-    margin-right: 120px;
+    /* margin-right: 120px; */
 }
 
 .footer-card-03{
@@ -125,9 +146,8 @@ line-height: normal;
 
 .footer-all-icon{
     display: flex;
-    width: 320px;
-    justify-content: space-between;
-    padding-top: 56px;
+    padding-top: 26px;
+    gap: 40px;
 }
 
 .address-div1, .address-div2{
