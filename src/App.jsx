@@ -10,12 +10,13 @@ import HeroD from "./components/dashboard/Hero";
 import Figure from "./components/dashboard/Figure";
 import MarqueeS from "./components/dashboard/Marquee";
 import News from "./components/dashboard/News/News";
+
 import NewsLetter from "./components/dashboard/NewsLetter";
 import IDO from "./components/dashboard/IDO";
 import NewsPage from "./components/dashboard/News/NewsPage";
 import Staking from "./components/Stack"; // Import Staking component
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
 
 const projectId = "c6cc849231f0c9770267752c7251f2b5";
 
@@ -37,11 +38,13 @@ import Footer from "./components/Footer";
 import Stack from "./components/Stack";
 import Stacking from "./components/Stacking";
 import Steps from "./components/Steps";
+import Staking2 from "./components/Stacking2";
+import Stacking2 from "./components/Stacking2";
 
 function App() {
   return (
     <Routes>
-       <Route
+      <Route
         exact
         path="/"
         element={
@@ -52,25 +55,25 @@ function App() {
                 <div className="md:px-20 md:py-10 p-2 bg-[#0f0f0f]">
                   <HeroD />
                   <Figure />
-                  <Steps/>
+                  <Steps />
                 </div>
                 <MarqueeS />
                 <div className="md:px-20 md:py-10 p-2 bg-[#0f0f0f]">
                   <IDO />
                   {/* <News /> */}
-                  <NewsLetter />
-                  <Footer/>
+                  {/* <NewsLetter /> */}
+                  <Footer />
                 </div>
               </>
             </WagmiConfig>
           </React.Fragment>
         }
-      /> 
+      />
       <Route
         path="/staking/:referralId?"
         element={
           <WagmiConfig config={wagmiConfig}>
-            <Staking /> {/* Add the Staking route */}
+            <Staking />
           </WagmiConfig>
         }
       />
@@ -82,13 +85,20 @@ function App() {
           </WagmiConfig>
         }
       />
-            <Route
+      <Route path="/stacking" element={
+        <WagmiConfig config={wagmiConfig}>
+        <Navbar/>
+        <Stacking2 /> 
+        <Footer/>
+        </WagmiConfig>
+    
+    } />
+      <Route
         path="/rewards"
         element={
           <WagmiConfig config={wagmiConfig}>
             <OurReward /> {/* Add the OurReward route */}
           </WagmiConfig>
-          
         }
       />
     </Routes>

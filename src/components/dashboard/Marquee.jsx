@@ -40,7 +40,7 @@ const MarqueeS = () => {
           </div>
         </div>
       </div>
-      <div className="w-full mt-52">
+      <div className="w-full mt-40">
         {/* <div
             className="marquee-chip p-14"
           >

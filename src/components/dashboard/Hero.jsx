@@ -24,10 +24,9 @@ const Hero = () => {
   return (
     <div className=" mb-4 overflow-hidden">
       <div className="md:order-1 order-2 summit-header">
-        <h1 className="d-heading text-center md:text-left mt-10">
+        <h1 className="d-heading text-center md:text-left ">
           {" "}
-          <span className="d-heading-gardiant pr-1">Summit </span> - PEOPLE'S
-          LAUNCHPAD
+          <span className="d-heading-gardiant pr-1">Summit- </span>  Crypto Launchpad Excellence
         </h1>
         <p className="d-hero-para text-center md:text-left">
         Step into Summit Launchpad—where vision ignites, promises deliver, and investments transform into extraordinary success. Join us on a journey where every idea becomes a triumph and every step inspires growth!

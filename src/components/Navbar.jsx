@@ -18,7 +18,7 @@ const Navbar = () => {
         <h1>MMPAD</h1>
         <div className={`navbar-span ${isMobileMenuOpen ? 'hide-options' : ''}`}>
           <span><Link to="/">Home</Link></span> 
-          <span><Link to="/stack">Stacking</Link></span>
+          <span><Link to="/stacking">Stacking</Link></span>
           <span><Link to="/marketplace">Marketplace</Link></span>
         </div>
       </div>
@@ -29,7 +29,7 @@ const Navbar = () => {
       {isMobileMenuOpen && (
         <div className='mobile-menu'>
           <span><Link to="/" onClick={handleMobileMenuToggle}>Home</Link></span>
-          <span><Link to="/stack" onClick={handleMobileMenuToggle}>Stacking</Link></span>
+          <span><Link to="/stacking" onClick={handleMobileMenuToggle}>Stacking</Link></span>
           <span><Link to="/marketplace" onClick={handleMobileMenuToggle}>Marketplace</Link></span>
         </div>
       )}

@@ -86,12 +86,12 @@ const Navbar = () => {
           >
             Apply Now
           </a>
-          {/* <Link
-            to="/staking"
+          <Link
+            to="/stacking"
             className="text-[#98A7B5] hover:text-white text-center px-0 py-3 rounded-md w-[100px]"
           >
             Staking
-          </Link> */}
+          </Link>
         </div>
         <div className="hidden md:flex items-center">
           <div className="mr-3 " >

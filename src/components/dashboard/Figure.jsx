@@ -38,7 +38,7 @@ const Figure = () => {
           <p className="figure-para text-center">Our Live Ecosystems</p>
         </div>
 
-        <div className="box-figure min-h-[200px] flex flex-col items-center justify-center">
+        <div className="box-figure1 min-h-[200px] flex flex-col items-center justify-center">
           <h2
             style={{ fontFamily: "fontbold" }}
             className="figure-heading-g text-4xl"
@@ -68,10 +68,10 @@ const Figure = () => {
           </svg>
           <span className="ml-1">TG Community</span>
         </button> */}
-        <h1 className="figure-heading text-4xl mt-7">
+        <h1 className="figure-heading text-4xl ">
           Click Below to buy <span className="figure-heading-g">$SUMMIT</span>
         </h1>
-        <div className="grid p-5 grid-cols-1 gap-1 mt-2 md:max-w-xl mx-auto">
+        <div className="grid p-5 grid-cols-1 gap-1 mt-2 md:max-w-xl mx-auto checkdiv">
           {/* <button className="flex items-center mx-auto bg-white text-black">
             <svg
               xmlns="http://www.w3.org/2000/svg"

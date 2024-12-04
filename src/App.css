@@ -16,6 +16,10 @@
   src: url('./assets/font/PlusJakartaSans-Light.ttf');
 }
 
+body{
+  background-color: rgb(22, 22, 22);
+}
+
 /* button {
   background:  linear-gradient(90deg, #ff1cee, #516aff) !important;
 }
@@ -40,6 +44,13 @@ button[data-size="md"]{
 
 *::-webkit-scrollbar {
   display: none; /* For Chrome, Safari, and Opera */
+}
+
+.summit-header{
+  width: 55%;
+  margin: 0px auto;
+  position: relative;
+  z-index: 1;
 }
 
 .banner-top-price {
@@ -97,22 +108,26 @@ button {
   border-radius: 100px !important;
 } */
 .header-gradient-div{
-  border-radius: 668px;
+  /* border-radius: 668px; */
   background: linear-gradient(221deg, rgba(255, 28, 238, 0.35) 11.49%, rgba(81, 106, 255, 0.35) 71.86%);
   filter: blur(132px);
-  width: 668px;
-  height: 649px;
+  width: 468px;
+  height: 366px;
   flex-shrink: 0;
   position: absolute;
-  top: -307px;
+  top: -0px;
   right: 0px;
   z-index: 0;
+  border-bottom-left-radius: 500px;
+  
+  
 }
 .summit-navbar{
   position: fixed;
   width: 100%;
   background: #303030;
-  z-index: 1;
+  z-index: 2;
+  top: 0px;
 }
 @keyframes logo-spin {
   from {
@@ -183,6 +198,7 @@ button {
   -ms-transform: rotate(-5.56deg);
   transform: rotate(-5.56deg);
   position: absolute;
+  top: -102px;
 }
 .ido-img {
   position: absolute;
@@ -253,6 +269,7 @@ button {
   color: white;
 }
 
+
 /* ////////////////////////// Dashboard ////////////////////////////// */
 
 
@@ -266,7 +283,7 @@ button {
   line-height: 72px;
   /* 105.556% */
   letter-spacing: -2.56px;
-  margin-bottom:0px;
+  margin-bottom:10px;
   text-align: left;
   margin-top: 86px;
 }
@@ -303,8 +320,20 @@ button {
 
   .d-heading,
   .d-heading-gardiant {
-    font-size: 42px;
+    font-size: 30px;
     line-height: normal;
+  }
+  .summit-header {
+    /* width: 100%; */
+    width: 73%;
+  }
+
+}
+
+@media screen and (max-width: 644px) {
+  .summit-header {
+    /* width: 100%; */
+    width: 73%;
   }
 
 }
@@ -313,7 +342,9 @@ button {
   .d-hero-box-flex {
     flex-wrap: wrap;
   }
-
+  .summit-header {
+    width: 100%;
+  }
   .d-hero-img-box {
     width: 100%;
     display: flex;
@@ -361,7 +392,12 @@ button {
 }
 
 /* ///////////////////////////////// Figure ////////////////////////////////// */
-
+.checkdiv{
+  margin-bottom: 50px;
+}
+.news-letter-para{
+  color: white;
+}
 .figure-heading {
   color: #FFF;
   font-family: fontbold;
@@ -371,6 +407,7 @@ button {
   line-height: 56px;
   /* 116.667% */
   letter-spacing: -1.92px;
+  margin-top: 80px;
 }
 
 .figure-heading-g {
@@ -401,11 +438,29 @@ button {
   border: 1px solid black;
   /* Just for visibility */
   padding: 47.626px;
-  border-radius: 9.525px;
-  border: 2.381px solid #516aff;
-  background: linear-gradient(180deg, #252525 0%, rgba(37, 37, 37, 0.08) 71.35%, rgba(37, 37, 37, 0.00) 100%);
+  /* border-radius: 9.525px; */
+  border: none;
+  border-right: 2.381px solid #516aff;
+  background: linear-gradient(87deg, rgba(255, 28, 238, 0.26) -4.79%, rgba(81, 106, 255, 0.28) 91.73%);
+  
 }
-
+.box-figure1 {
+  flex: 1;
+  min-width: calc(25% - 12px);
+  /* Adjust for gap */
+  /* height: 100px;  */
+  background-color: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  border: 1px solid black;
+  /* Just for visibility */
+  padding: 47.626px;
+  /* border-radius: 9.525px; */
+  border:none;
+  border-right: 2.381px solid #516aff;
+  background: linear-gradient(87deg, rgba(255, 28, 238, 0.26) -4.79%, rgba(81, 106, 255, 0.28) 91.73%);
+}
 .figure-icon-box {
   display: flex;
   padding: 19.05px;
@@ -474,6 +529,9 @@ button {
   .box-figure {
     min-width: calc(100% - 12px);
     /* Full width on smaller screens */
+  }
+  .header-gradient-div{
+    display: none;
   }
 }
 
@@ -931,10 +989,7 @@ color: white;
   display: flex;
   align-self: end;
 }
-.summit-header{
-  width: 51%;
-  margin: 0px auto;
-}
+
 .blog-card-bg {
   background-color: #26262b;
 }

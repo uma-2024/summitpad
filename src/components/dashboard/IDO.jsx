@@ -7,22 +7,17 @@ import bnbLogo from "../../assets/Solana-Logo.png";
 
 const IDO = () => {
   return (
-    <div className="text-white p-12 mt-52">
+    <div className="text-white p-12 mt-40">
       <div className="container mx-auto flex-col">
         <div className="text-center mb-12">
           <h1
             style={{ fontFamily: "fontbold" }}
             className="text-4xl font-bold mb-4"
           >
-            Upcoming IDOs
+           Upcoming IDO
           </h1>
           <p className="mb-4">
-            <span>Why SUMMITPAD?</span> SUMMITPAD is The Pinnacle of Joint-Community IDO
-            Platforms. Unlike traditional launchpads, we're not just a platform
-            but a community-driven force. We're pioneering a revolution in
-            Initial DEX Offerings, setting the gold standard with unparalleled
-            parameters that guarantee project quality. Our user base comprises
-            dedicated, long-term holders – the backbone for sustainable project
+            <span>Why SUMMITPAD?</span> Gain early access to innovative crypto projects with Summit's upcoming IDO. Secure exclusive token allocations and be part of the next big breakthrough in blockchain technology. Don't miss out!
             growth.
           </p>
         </div>
