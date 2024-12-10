@@ -2,40 +2,71 @@
     background-color: #0F0F0F;
     color: #FFF;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     height: 100%;
 padding-left: 120px;
 padding-right: 120px;
 padding-top: 147px;
 padding-bottom: 40px;
-text-align: left;
+text-align: center;
 }
 
 .g-left{
-    width: 40%;
-margin-right: 20px;
+    width: 80%;
+    margin: 0px auto;
+margin-bottom: 100px;
+
+}
+.list-data{
+    text-align: left;
+}
+.list-data-cont{
+    margin-top: 100px;
+    text-align: left;
+}
+.list-data-cont1{
+    margin-top: 50px;
+    text-align: left;
+}
+.list-data-cont h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.list-data-cont1 h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.list-data{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.list-data li{
+    font-weight: 600;
 }
 .g-left h1{
     margin-top: 0px;
     margin-bottom: 32px;
     color: #FFF;
-font-family: Lora;
-font-size: 56px;
+font-family: fontbold;
+font-size: 50px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
-letter-spacing: 3px;
+letter-spacing: -0.5px;
 }
 .g-left h1 span{
     background: linear-gradient(86deg, rgba(255, 28, 238, 0.86) -4.79%, rgba(81, 106, 255, 0.88) 28.82%);
 background-clip: text;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
+margin: 0px 10px;
 }
 
 .g-right{
-    width: 60%;
-    margin-left: 30px;
+    margin: 0px auto;
+    width: 100%;
 }
 .g-left .detail-card{
     display: flex;
@@ -82,8 +113,19 @@ background: #F24330;
     line-height: 23px;
     letter-spacing: 0.18px;
 }
-.btn-know-more{
-display: none;
+.submit123{
+    border-radius: 160px;
+background: linear-gradient(90deg, #FF1CEE 0%, #516AFF 100%);
+display: flex;
+width: 300px;
+padding: 12px 24px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+margin: 0 auto;
+margin-top: 100px;
+margin-bottom: 100px;
+
 }
 @media (max-width: 768px) {
     .gstacking{

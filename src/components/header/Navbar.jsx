@@ -26,6 +26,10 @@ const Navbar = () => {
     // }
   };
 
+  const handleOpenPDF = () => {
+    const pdfPath = "../../src/assets/Images/Summit_Whitepaper.pdf";
+    window.open(pdfPath, "_blank", "noopener,noreferrer");
+  };
   useEffect(() => {
     validateNetwork();
   }, [address, isConnected, chain]);
@@ -69,7 +73,7 @@ const Navbar = () => {
         </div>
         <div className="hidden md:flex space-x-4">
           <a
-            href="#"
+            href="/unite-earn"
             className="text-[#98A7B5] hover:text-white text-center px-0 py-3 rounded-md w-[100px]"
           >
             Buy
@@ -92,6 +96,12 @@ const Navbar = () => {
           >
             Staking
           </Link>
+          <a
+ onClick={handleOpenPDF}
+  className="text-[#98A7B5] hover:text-white text-center px-0 py-3 rounded-md w-[100px] cursor-pointer"
+>
+  Whitepaper
+</a>
         </div>
         <div className="hidden md:flex items-center">
           <div className="mr-3 " >

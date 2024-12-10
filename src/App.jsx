@@ -40,6 +40,8 @@ import Stacking from "./components/Stacking";
 import Steps from "./components/Steps";
 import Staking2 from "./components/Stacking2";
 import Stacking2 from "./components/Stacking2";
+import UniteToEarn from "./components/UniteToEarn";
+import FormComponent from "./components/FormComponent";
 
 function App() {
   return (
@@ -98,6 +100,26 @@ function App() {
         element={
           <WagmiConfig config={wagmiConfig}>
             <OurReward /> {/* Add the OurReward route */}
+          </WagmiConfig>
+        }
+      />
+      <Route
+        path="/unite-earn"
+        element={
+          <WagmiConfig config={wagmiConfig}>
+             <Navbar/>
+            <UniteToEarn/>
+            <Footer/>
+          </WagmiConfig>
+        }
+      />
+      <Route
+        path="/unite-form"
+        element={
+          <WagmiConfig config={wagmiConfig}>
+             <Navbar/>
+            <FormComponent/>
+            <Footer/>
           </WagmiConfig>
         }
       />

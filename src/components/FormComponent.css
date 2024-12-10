@@ -1,0 +1,117 @@
+.form-container {
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #121212;
+  color: #FFFFFF;
+  margin: 2rem auto;
+  box-shadow: 0px 0px 15px rgba(255, 28, 238, 0.86);
+  border: 1px solid rgba(255, 28, 238, 0.86);
+  text-align: center;
+  width: 70%;
+  }
+  .form-container h2{
+    margin-top: 0px;
+  margin-bottom: 32px;
+  color: #FFF;
+  font-family: fontbold;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.5px;
+  }
+  .form-container p{
+    margin-bottom: 40px;
+  }
+  .form-container-main{
+    padding-top: 100px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0px auto;
+  }
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    gap: 30px;
+  }
+  .form-row label{
+text-align: left;
+margin-bottom: 10px;
+  }
+  form .input123 {
+    padding: 10px;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid #fff;
+    border-radius: 0px;
+    background: #fff;
+    clip-path: polygon(4% 0, 100% 0, 100% 76%, 97% 100%, 0px 100%, 0 21%);
+    color: #fff;
+  }
+  .form-row-inner{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .form-row-inner21{
+    width: 47%;
+  }
+  form input::placeholder {
+    color: #ccc;
+  }
+  .form-members {
+    display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+  gap: 16px;
+  }
+  .form-members .input123 {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #fff;
+    border-radius: 0px;
+    background: #fff;
+    color: #fff;
+    clip-path: polygon(4% 0, 100% 0, 100% 76%, 97% 100%, 0px 100%, 0 21%);
+  }
+  .upload-label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    text-align: left;
+  }
+  .submit-button1234 {
+    border-radius: 160px;
+background: linear-gradient(90deg, #FF1CEE 0%, #516AFF 100%) !important;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    width: fit-content;
+    padding: 10px 40px ;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+  }
+  
+  .form-confirmation {
+    display: flex;
+    align-items: first baseline;
+    margin-bottom: 40px;
+    margin-top: 30px;
+  }
+  .form-confirmation input {
+    margin-right: 10px;
+  }

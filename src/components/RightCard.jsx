@@ -1,27 +1,44 @@
 // src/components/RightCard.jsx
 import React from 'react';
 import './RightCard.css';
+import walletImage from '../../src/assets/Images/walletImage.gif'
 
 const RightCard = () => {
   return (
     <div className="container">
       <div className="glass">
-        <h1>POD 1</h1>
-        <h5><span>Minimum Amount-</span><br/> 100$ worth MMIT</h5>
-        <h4>APR -<span> 20%</span></h4>
-        <h4>Duration - 360 days </h4>
+        <div className='glass-inner'>
+        <h1>Form Your Group</h1>
+        <h5><span>Gather a team of at least 5 people.</span></h5>
+        </div>
+        
+       <img src={walletImage}/>
       </div>
       <div className="glass">
-        <h1>POD 2</h1>
-        <h5><span>Minimum amount-</span><br/> 500$ worth MMIT</h5>
-        <h4>APR -<span> 25%</span></h4>
-        <h4>Duration - 360 days </h4>
+        <div className='glass-inner'>
+        <h1>Create and Share</h1>
+        <h5><span>Create a banner featuring the Summit logo, your city, and country name. Post group photos on Twitter, CoinMarketCap, and Instagram. </span></h5>
+        </div>
+        
+        <img src={walletImage}/>
       </div>
       <div className="glass">
-        <h1>POD 3</h1>
-        <h5><span>Minimum Amount-</span><br/> 1000$ worth MMIT</h5>
-        <h4>APR -<span> 30%</span></h4>
-        <h4>Duration - 360 days </h4>
+        <div className='glass-inner'>
+        <h1>Submit Proof</h1>
+        <h5><span>Upload your posts and links to the Summit website for verification.</span></h5>
+        </div>
+        
+        <img src={walletImage}/>
+      </div >
+      <div className="glass">
+        <div className='glass-inner'>
+        <h1>Earn Rewards</h1>
+        
+        <h5><span>5-10 participants: Earn up to $20.<br/> 11-20 participants: Earn up to $40. <br/> 21+ participants: Earn up to $50.</span>
+        <br/></h5>
+        </div>
+        
+        <img src={walletImage}/>
       </div>
     </div>
   );

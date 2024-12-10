@@ -2,7 +2,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    width: 95%;
+    width: 100%;
   }
   
   .container .glass {
@@ -20,12 +20,13 @@
     transform: rotate(calc(var(--r) * 1deg));
     z-index: 1;
     border-radius: 20px;
-border: 2px solid rgba(81, 106, 255, 0.86);
+border: 2px solid rgba(255, 28, 238, 0.86);
 background: linear-gradient(87deg, rgba(255, 28, 238, 0.10) -4.98%, rgba(81, 106, 255, 0.11)91.73%), #0F0F0F;
 display: flex;
 flex-direction: column;
 color: #fff;
 gap: 36px;
+padding: 16px;
   }
   
   .container .glass:nth-child(1) {
@@ -46,6 +47,12 @@ gap: 36px;
     z-index: 1; 
   }
   
+  
+  .container .glass:nth-child(4) {
+    transform: rotate(20deg); 
+    margin-left: -60px; 
+    z-index: 0; 
+  }
   .container:hover .glass {
     transform: rotate(0deg);
     margin: 0 10px;
@@ -56,17 +63,33 @@ gap: 36px;
     fill: #fff;
   }
   .glass h1{
-    background: linear-gradient(86deg, rgba(255, 28, 238, 0.86) -4.79%, rgba(81, 106, 255, 0.88) 28.82%);
+    /* background: linear-gradient(86deg, rgba(255, 28, 238, 0.86) -4.79%, rgba(81, 106, 255, 0.88) 28.82%);
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
+    font-size: 20px;
+    text-align: left;
+    color: white;
+
+  }
+
+  .glass-inner{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .glass img{
+    width:100px ;
+    height: 100px;
+  
   }
 .glass span{
-  font-size: 18px;
-  color: rgba(81, 106, 255, 0.88);
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.88);
 }
 .glass h5{
-  text-align: center;
+  text-align: left;
+  font-size: 12px;
 }
   @media (max-width: 768px){
     .container .glass {

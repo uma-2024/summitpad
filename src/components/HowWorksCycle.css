@@ -1,0 +1,201 @@
+.HowWorksCycle{
+    display: flex;
+    gap: 50px;
+    height: 492px;
+}
+
+.cycleCards{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+.cycleCard{
+    background: linear-gradient(90deg, rgba(255, 28, 238, 0.12) 0%, rgba(81, 106, 255, 0.12) 100%);
+    padding: 15px;
+    border-radius: 10px;
+    position: relative;
+   padding-top: 20px;
+   padding-bottom: 10px;
+}
+.cycleCard span{
+    background-color: #fff;
+    border:2px solid #FF1CEE ;
+    border-radius: 50%;
+    color: black;
+    padding: 5px 20px;
+    font-weight: 800;
+    position: absolute;
+    top: -40px;
+    left: -20px;
+    font-size: 30px;
+}
+.cycleCard h2{
+    color: #FFF;
+font-size: 20px;
+font-style: normal;
+font-weight: 800;
+/* line-height: 102%; */
+margin-bottom: 16px;
+}
+.cycleCard img{
+ width: 80px;
+ margin: 0 auto;
+}
+
+
+.reveal-animation-container {
+    position: relative;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+
+  }
+  
+  .circle-img,
+  .round-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .circle-img {
+    z-index: 1;
+    clip-path: polygon(50% 50%, 50% 0%, 50% 0%, 50% 0%); 
+    animation: progressive-reveal-clockwise 10s linear infinite ;
+   
+    
+
+  }
+  
+  .round-img {
+    z-index: 0; /* Round image stays behind */
+  }
+
+  @keyframes progressive-reveal-clockwise {
+    0% {
+      clip-path: polygon(50% 50%, 50% 0%, 50% 0%, 50% 0%);
+    }
+    6.25% {
+      clip-path: polygon(50% 50%, 50% 0%, 75% 0%, 75% 25%);
+    }
+    12.5% {
+      clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 25%);
+    }
+    18.75% {
+      clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 50%);
+    }
+    25% {
+      clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 75%);
+    }
+    31.25% {
+      clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 100%, 75% 100%);
+    }
+    37.5% {
+      clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 100%, 50% 100%);
+    }
+    43.75% {
+      clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 100%, 25% 100%);
+    }
+    50% {
+      clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+    56.25% {
+      clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 75%);
+    }
+    
+    62.5% {
+      clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 50%);
+    }
+    68.75% {
+      clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 25%);
+    }
+    75% {
+      clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 0%);
+    }
+    81.25% {
+      clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 0%, 25% 0%);
+    }
+    87.5% {
+      clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 0%, 50% 0%);
+    }
+    93.75% {
+      clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 0%, 75% 0%);
+    }
+    100% {
+      clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 0%, 50% 0%);
+    }
+  }
+  
+  /* @keyframes progressive-reveal-clockwise {
+    0% {
+      clip-path: polygon(50% 50%, 50% 0%, 50% 0%, 50% 0%);
+    }
+    12.5% {
+      clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 0%);
+    }
+    25% {
+      clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 50%);
+    }
+    37.5% {
+      clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 100%, 100% 100%);
+    }
+    50% {
+      clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 100%, 50% 100%);
+    }
+    62.5% {
+      clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+    75% {
+      clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 50%);
+    }
+    87.5% {
+      clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 0%);
+    }
+    100% {
+      clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 0%, 50% 0%);
+    }
+  } */
+ 
+  .cycleCard {
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Move slightly downward */
+    animation: fadeInUp 1s forwards; /* Fade and slide in */
+  }
+  
+  .cycleCard {
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); 
+    animation: fadeInUp 1s forwards; 
+  }
+  
+  .cycleCard.card1 {
+    animation-delay: 0s;
+  }
+  
+  .cycleCard.card2 {
+    animation-delay: 1s;
+  }
+  
+  .cycleCard.card3 {
+    animation-delay: 3s;
+  }
+  
+  .cycleCard.card4 {
+    animation-delay: 5s;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
