@@ -62,14 +62,32 @@ margin-bottom: 16px;
     margin: 0 auto;
    }
 
+   .reveal-animation-container {
+    position: relative;
+    width: 40%;
+    height: 100%; /* Add height for proper centering */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .circle-img,
+  .round-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the circle */
+    width: 100%;
+    object-fit: cover;
+  }
 
-.reveal-animation-container {
+/* .reveal-animation-container {
     position: relative;
     width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* overflow: hidden; */
 }
 
 .circle-img,
@@ -79,7 +97,7 @@ margin-bottom: 16px;
     left: 0;
     width: 100%;
     object-fit: cover;
-}
+} */
 
 .circle-img {
     z-index: 1;
