@@ -74,16 +74,16 @@ const Navbar = () => {
         <div className="hidden md:flex space-x-4">
           <a
             href="/unite-earn"
-            className="text-[#98A7B5] hover:text-white text-center px-0 py-3 rounded-md w-[100px]"
+            className="text-[#98A7B5] hover:text-white text-center px-0 py-3 rounded-md"
           >
-            Buy
+            Unite-to-earn
           </a>
-          <a
+          {/* <a
             href="#"
             className="text-[#98A7B5] hover:text-white text-center px-0 py-3 rounded-md w-[100px]"
           >
             Social Media
-          </a>
+          </a> */}
           <a
             href="#"
             className="text-[#98A7B5] hover:text-white text-center px-0 py-3 rounded-md w-[100px]"
