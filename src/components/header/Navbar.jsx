@@ -6,14 +6,15 @@ import { useWeb3Modal } from "@web3modal/wagmi/react";
 import { useNetwork, useSwitchNetwork, useAccount, useConnect } from "wagmi";
 import Web3Button from "../web3button/Web3Button";
 import Web3ButtonMob from "../web3button/Web3ButtonMob";
-import { FaBars, FaTimes } from 'react-icons/fa'; 
-import logoImage from "../../assets/Images/Summit.svg"
-import './Navbar.css'; 
+import { FaBars, FaTimes } from "react-icons/fa";
+import logoImage from "../../assets/Images/Summit.svg";
+import "./Navbar.css";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { chain } = useNetwork();
-  const { chains, error, isLoading, pendingChainId, switchNetwork } = useSwitchNetwork();
+  const { chains, error, isLoading, pendingChainId, switchNetwork } =
+    useSwitchNetwork();
   const { address, isConnected } = useAccount();
   const [usdValue, setUsdValue] = useState(0);
   const coinId = "mangoman-intelligent";
@@ -58,7 +59,7 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate('/');
+    navigate("/");
   };
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -67,9 +68,9 @@ const Navbar = () => {
   return (
     <nav className="bg-[#24262B] shadow-2xl summit-navbar">
       <div className="flex justify-center items-center md:justify-between px-10 py-2">
-        <div onClick={handleClick} style={{cursor:'pointer'}}>
+        <div onClick={handleClick} style={{ cursor: "pointer" }}>
           {/* <span className="d-heading-gardiant text-4xl">MM Pad</span> */}
-          <img src={logoImage} className="logo-image"/>
+          <img src={logoImage} className="logo-image" />
         </div>
         <div className="hidden md:flex space-x-4">
           <a
@@ -97,15 +98,15 @@ const Navbar = () => {
             Staking
           </Link>
           <a
- onClick={handleOpenPDF}
-  className="text-[#98A7B5] hover:text-white text-center px-0 py-3 rounded-md w-[100px] cursor-pointer"
->
-  Whitepaper
-</a>
+            onClick={handleOpenPDF}
+            className="text-[#98A7B5] hover:text-white text-center px-0 py-3 rounded-md w-[100px] cursor-pointer"
+          >
+            Whitepaper
+          </a>
         </div>
         <div className="hidden md:flex items-center">
-          <div className="mr-3 " >
-            <Web3Button style={{borderRadius:"50%"}} />
+          <div className="mr-3 ">
+            <Web3Button style={{ borderRadius: "50%" }} />
           </div>
         </div>
         <div className="md:hidden flex gap-2 ml-auto">
@@ -119,10 +120,40 @@ const Navbar = () => {
       </div>
       {isMobileMenuOpen && (
         <div className="mobile-menu">
-          <a href="#" onClick={toggleMobileMenu} className="text-[#98A7B5] hover:text-white text-center px-0 py-3 rounded-md w-[100px]">Buy MMIT</a>
-          <a href="#" onClick={toggleMobileMenu} className="text-[#98A7B5] hover:text-white text-center px-0 py-3 rounded-md w-[100px]">Social Media</a>
-          <a href="#" onClick={toggleMobileMenu} className="text-[#98A7B5] hover:text-white text-center px-0 py-3 rounded-md w-[100px]">Apply Now</a>
-          <Link to="/stacking" onClick={toggleMobileMenu} className="text-[#98A7B5] hover:text-white text-center px-0 py-3 rounded-md w-[100px]">Staking</Link>
+          <a
+            href="/unite-earn"
+            onClick={toggleMobileMenu}
+            className="text-[#98A7B5] hover:text-white text-center px-0 py-3 rounded-md "
+          >
+            Unite-to-earn
+          </a>
+          <a
+            href="#"
+            onClick={toggleMobileMenu}
+            className="text-[#98A7B5] hover:text-white text-center px-0 py-3 rounded-md w-[100px]"
+          >
+            Social Media
+          </a>
+          <a
+            href="#"
+            onClick={toggleMobileMenu}
+            className="text-[#98A7B5] hover:text-white text-center px-0 py-3 rounded-md w-[100px]"
+          >
+            Apply Now
+          </a>
+          <Link
+            to="/stacking"
+            onClick={toggleMobileMenu}
+            className="text-[#98A7B5] hover:text-white text-center px-0 py-3 rounded-md w-[100px]"
+          >
+            Staking
+          </Link>
+          <Link
+            onClick={toggleMobileMenu}
+            className="text-[#98A7B5] hover:text-white text-center px-0 py-3 rounded-md w-[100px]"
+          >
+            <span onClick={handleOpenPDF}>Whitepaper</span>
+          </Link>
         </div>
       )}
     </nav>
