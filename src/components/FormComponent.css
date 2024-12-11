@@ -62,6 +62,7 @@ margin-bottom: 10px;
   }
   .form-row-inner21{
     width: 47%;
+    text-align: left;
   }
   form input::placeholder {
     color: #ccc;
