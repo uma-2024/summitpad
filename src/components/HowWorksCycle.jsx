@@ -15,8 +15,8 @@ const HowWorksCycle = () => {
         </div>
         <div className='cycleCard card4'>
         <span>4</span>
-            <h2>Form Your Group</h2>
-        <p>Gather a team of at least 5 people.</p>
+            <h2>Earn Reward</h2>
+        <p>5-10 participants: Earn up to $20. <br/>11-20 participants: Earn up to $40. <br/>21+ participants: Earn up to $50.</p>
         <img src={walletImage}/>
         </div>
       </div>
