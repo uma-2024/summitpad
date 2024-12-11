@@ -198,6 +198,9 @@ margin-bottom: 0px;
     .footer-card3 svg{
         display: none;
     }
+    .footer-card1 input {
+        width: 100%;
+    }
     .footer-card1 button {
         padding: 20px;
     }

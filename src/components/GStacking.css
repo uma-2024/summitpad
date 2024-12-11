@@ -131,7 +131,7 @@ margin-bottom: 100px;
     .gstacking{
         padding-left: 16px;
         padding-right: 16px;
-        padding-top: 72px;
+        padding-top: 120px;
         padding-bottom: 24px;
         flex-direction: column;
         text-align: center;
@@ -187,5 +187,11 @@ margin-bottom: 100px;
 }
 .detail-card2{
     gap: 0px;
+}
+.list-data-cont h3{
+    font-size: 24px;
+}
+.list-data-cont1 h3 {
+    font-size: 24px;
 }
 }

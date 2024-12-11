@@ -116,3 +116,27 @@ background: linear-gradient(90deg, #FF1CEE 0%, #516AFF 100%) !important;
   .form-confirmation input {
     margin-right: 10px;
   }
+
+  @media (max-width: 768px) {
+    .form-container {
+      width: 90%;
+      }
+      .form-row-inner21{
+        width: 48%;
+        text-align: left;
+      }
+      form {
+        width: 100%;
+      }
+      .form-row {
+        gap: 0px;
+      }
+      .form-container h2 {
+        margin-bottom: 12px;
+        font-size: 24px;
+      }
+      .form-container p {
+        margin-bottom: 40px;
+        font-size: 13px;
+      }
+  }

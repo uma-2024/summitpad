@@ -123,7 +123,7 @@ const Navbar = () => {
           <a
             href="/unite-earn"
             onClick={toggleMobileMenu}
-            className="text-[#98A7B5] hover:text-white text-center px-0 py-3 rounded-md "
+            className="text-[#98A7B5] hover:text-white text-center px-0 py-3 rounded-md w-[120px]"
           >
             Unite-to-earn
           </a>

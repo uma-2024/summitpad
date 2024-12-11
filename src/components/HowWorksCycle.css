@@ -8,6 +8,10 @@
 display: flex;
 flex-direction: column;
 justify-content: space-between;
+width: 30%;
+}
+.cycleCard p{
+    font-size: 14px;
 }
 .cycleCard{
     background: linear-gradient(90deg, rgba(255, 28, 238, 0.12) 0%, rgba(81, 106, 255, 0.12) 100%);
@@ -16,6 +20,7 @@ justify-content: space-between;
     position: relative;
    padding-top: 20px;
    padding-bottom: 10px;
+   height: 215px;
 }
 .cycleCard span{
     background-color: #fff;
@@ -37,10 +42,25 @@ font-weight: 800;
 /* line-height: 102%; */
 margin-bottom: 16px;
 }
-.cycleCard img{
+.cycleCard.card1 img{
+  
  width: 80px;
  margin: 0 auto;
+ margin-top: 20px;
 }
+
+.cycleCard.card2 img{
+    width: 50px;
+    margin: 0 auto;
+   }
+   .cycleCard.card3 img{
+    width: 100px;
+    margin: 0 auto;
+   }
+   .cycleCard.card4 img{
+    width: 150px;
+    margin: 0 auto;
+   }
 
 
 .reveal-animation-container {
@@ -121,7 +141,7 @@ margin-bottom: 16px;
         clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 0%, 75% 0%);
     }
     100% {
-        clip-path: none; /* Show the entire image after the animation */
+        clip-path: none; 
     }
 }
 
@@ -195,3 +215,61 @@ margin-bottom: 16px;
     }
   }
   
+  @media (max-width: 768px) {
+  .cycleCard span {
+    background-color: #fff;
+    border: 2px solid #FF1CEE;
+    border-radius: 50%;
+    color: black;
+    padding: 2px 13px;
+    font-weight: 800;
+    position: absolute;
+    top: -29px;
+    left: -8px;
+    font-size: 18px;
+  }
+  .cycleCard h2 {
+    font-size: 12px;
+  }
+  .cycleCard p {
+    font-size: 8px;
+  }
+  .HowWorksCycle {
+    display: flex;
+    gap: 20px;
+    height: 100%;
+  }
+
+  .cycleCards {
+    gap: 62px;
+    width:100%
+  }
+  .cycleCard {
+    background: linear-gradient(90deg, rgba(255, 28, 238, 0.12) 0%, rgba(81, 106, 255, 0.12) 100%);
+    padding: 0px;
+    border-radius: 10px;
+    position: relative;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    height: 155px;
+  }
+  .cycleCard.card1 img {
+    width: 40px;
+    margin-top: 20px;
+  }
+  .cycleCard.card2 img{
+    width: 40px;
+    margin-top: 10px;
+   }
+   .cycleCard.card3 img{
+    width: 70px;
+    margin-top: 10px;
+   }
+   .cycleCard.card4 img{
+    width: 100px;
+    margin-top: 10px;
+   }
+   .reveal-animation-container {
+    display: none;
+   }
+}
